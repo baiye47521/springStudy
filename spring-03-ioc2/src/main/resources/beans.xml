@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--有参构造器-->
+    <!--方法一 下标赋值-->
+<!--    <bean id="user" class="com.hand.pojo.User">-->
+<!--        <constructor-arg index="0" value="帅"/>-->
+<!--    </bean>-->
+
+    <!-- 方法二 通过类型创建，不建议使用-->
+<!--    <bean id="user" class="com.hand.pojo.User">-->
+<!--        <constructor-arg type="java.lang.String" value="太帅"/>-->
+<!--    </bean>-->
+
+    <!-- 方法三 通过参数名-->
+    <bean id="user" class="com.hand.pojo.User">
+        <constructor-arg name="name" value="帅"/>
+    </bean>
+
+    <bean id="userT" class="com.hand.pojo.UserT">
+    </bean>
+
+    <alias name="user" alias="sdasdasda"/>
+
+</beans>
