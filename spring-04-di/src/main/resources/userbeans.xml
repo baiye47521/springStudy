@@ -10,6 +10,8 @@
     <bean id="user" class="com.hand.pojo.User" p:name="帅哥" p:age="18"/>
 
     <!--c命名空间注入 构造求注入 construct-->
-    <bean id="user2" class="com.hand.pojo.User" c:name="大帅哥" c:age="20"/>
+    <!--scope 默认单例模式 singleton-->
+    <!--prototype：原型模式，每次产生新对象-->
+    <bean id="user2" class="com.hand.pojo.User" c:name="大帅哥" c:age="20" scope="prototype"/>
 
 </beans>
