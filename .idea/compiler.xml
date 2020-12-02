@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-04-di" />
         <module name="spring-08-appconfig" />
+        <module name="spring-09-proxy" />
         <module name="spring-07-annation" />
         <module name="spring-03-ioc2" />
         <module name="spring-02-sohand" />
